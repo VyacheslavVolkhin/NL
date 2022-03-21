@@ -2,7 +2,363 @@
 <!-- footer -->
 <footer class="footer">
 	<div class="inner-wrap">
-		333333
+		<div class="footer-inner-wrap">
+			<div class="footer-info">© Nextologies, 2022</div>
+		</div>
 	</div>
 </footer>
 <!-- /footer -->
+
+
+<!--popup-event-->
+<div class="popup-box popup-event" id="popup-event">
+	<!--popup-title-wrap-->
+	<div class="popup-title-wrap">
+		<div class="popup-title-text">AWE_from_Herring_PAL, events list</div>
+		<div class="popup-title-action">
+			<a href="" class="btn button-medium button-medium-border" data-content="popup-form01">New event</a>
+		</div>
+	</div>
+	<!--/popup-title-wrap-->
+	<!--popup-content-wrap-->
+	<div class="popup-content-wrap">
+		<!--popup-form-box-->
+		<div class="popup-form-box frm-content" data-content="popup-form01">
+			<div class="form-column-wrap">
+				<div class="form-select-wrap">
+					<div class="frm-select">
+						<input type="radio" name="popup-form01" id="popup-form01-01" data-content="popup-select-datepicker" checked>
+						<label for="popup-form01-01">Date</label>
+					</div>
+					<div class="frm-select">
+						<input type="radio" name="popup-form01" id="popup-form01-02" data-content="popup-select-weekend">
+						<label for="popup-form01-02">Period</label>
+					</div>
+				</div>
+				<div class="form-view-wrap">
+					<div class="frm-content" data-content="popup-select-datepicker">
+						<div class="js-datepicker-inline frm-datepicker"></div>
+					</div>
+					<div class="frm-content" data-content="popup-select-weekend">
+						<div class="frm-weekend-select">
+							<table class="ui-datepicker-calendar">
+								<thead>
+									<tr>
+										<th>Mo</th>
+										<th>Tu</th>
+										<th>We</th>
+										<th>Th</th>
+										<th>Fr</th>
+										<th>Sa</th>
+										<th>Su</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-01">
+												<label for="popup-week01-01"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-02">
+												<label for="popup-week01-02"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-03" checked>
+												<label for="popup-week01-03"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-04" checked>
+												<label for="popup-week01-04"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-05">
+												<label for="popup-week01-05"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-06">
+												<label for="popup-week01-06"></label>
+											</div>
+										</td>
+										<td>
+											<div class="frm-select select-clear">
+												<input type="checkbox" id="popup-week01-07">
+												<label for="popup-week01-07"></label>
+											</div>
+										</td>
+									</tr>
+									<tr class="tr-clear">
+										<td colspan="7">
+											<div class="frm-select">
+												<input type="checkbox" id="popup-week01-all">
+												<label for="popup-week01-all">Select all</label>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-row-wrap">
+				<div class="form-select-wrap">
+					<div class="frm-select">
+						<input type="radio" name="popup-form02" id="popup-form02-01" data-content="popup-select-time" checked>
+						<label for="popup-form02-01">Exact time, AT</label>
+					</div>
+					<div class="frm-select">
+						<input type="radio" name="popup-form02" id="popup-form02-02" data-content="popup-select-interval">
+						<label for="popup-form02-02">Interval, EVERY</label>
+					</div>
+				</div>
+				<div class="form-view-wrap">
+					<div class="frm-content" data-content="popup-select-time">
+						<div class="frm-row">
+							<div class="frm-field field-time">
+								<div class="frm-field-input js-field-input">
+									<label class="field-label">SET TIME</label>
+									<input type="text" class="form-input" placeholder="1:00:00 AM">
+									<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+								</div>
+							</div>
+							<div class="frm-field">
+								<div class="frm-field-input js-field-input">
+									<label class="field-label">TIME ZONE</label>
+									<select class="form-input select2">
+										<option value="" disabled>Nothing selected</option><!--for placeholder-->
+										<option value="" selected>(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+										<option value="">(UTC+ 10:00) Canberra, Melbourne, Sydney</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-content" data-content="popup-select-interval">
+						<div class="frm-row">
+							<div class="frm-field">
+								<div class="frm-field-input js-field-input">
+									<label class="field-label">INTERVAL</label>
+									<input type="text" class="form-input" placeholder="00 H : 00 M : 00 SEC">
+									<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-field-input">
+								<label class="field-label">ACTION</label>
+								<select class="form-input select2">
+									<option value="" disabled>Nothing selected</option><!--for placeholder-->
+									<option value="" selected>Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+									<option value="">Start server (AWE_from_Herring_PAL)</option>
+								</select>
+							</div>
+						</div>
+						<div class="frm-field field-actions">
+							<button class="btn">Create event</button>
+							<button class="btn button-second">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/popup-form-box-->
+		<!--popup events box-->
+		<div class="popup-events-box">
+			<div class="items-wrap">
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-event">
+						<div class="event-title-wrap">
+							<div class="event-title">Re-start</div>
+						</div>
+						<div class="event-info-wrap">
+							<div class="event-info">Mo, Tu, We <br>Every 35 mins 00 secs</div>
+						</div>
+						<div class="event-actions-wrap">
+							<a href="" class="btn-action-ico ico-edit"></a>
+							<a href="" class="btn-action-ico ico-delete"></a>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-event">
+						<div class="event-title-wrap">
+							<div class="event-title">Stop</div>
+						</div>
+						<div class="event-info-wrap">
+							<div class="event-info">03 Jan, 2022, Mo <br>1:30 AM (UTC+04:00)  - <span class="text-red">34 mins left</span></div>
+						</div>
+						<div class="event-actions-wrap">
+							<a href="" class="btn-action-ico ico-edit"></a>
+							<a href="" class="btn-action-ico ico-delete"></a>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+			</div>
+			<div class="elm-message">
+				<div class="ms-title">No event set here yet.</div>
+				<p>Please click the button above to add future single or periodic event, to happen once or several times.</p>
+			</div>
+		</div>
+		<!--/popup events box-->
+	</div>
+	<!--/popup-content-wrap-->
+	<!--popup-footer-wrap-->
+	<div class="popup-footer-wrap">
+		<div class="frm-row-submit">
+			<div class="submit-button">
+				<button class="btn button-att" disabled>
+					<span class="button-ico">
+						<img src="./img/icons/ok.svg" alt="">
+					</span>
+					Save changes
+				</button>
+			</div>
+			<div class="submit-button">
+				<button class="btn button-second" disabled>Drop changes and exit</button>
+			</div>
+		</div>
+	</div>
+	<!--/popup-footer-wrap-->
+</div>
+<!--/popup-event-->
+<!--popup-notify-->
+<div class="popup-box popup-notify" id="popup-notify">
+	<!--popup-title-wrap-->
+	<div class="popup-title-wrap">
+		<div class="popup-title-text title-large">Latest notifications</div>
+		<div class="popup-title-action">
+			<a href="" class="btn-action-ico ico-filter ico-filter-att"></a>
+		</div>
+	</div>
+	<!--/popup-title-wrap-->
+	<!--popup-content-wrap-->
+	<div class="popup-content-wrap">
+		<!--popup-form-main-->
+		<div class="popup-form-main">
+			<div class="frm-row">
+				<label class="frm-label">date range</label>
+				<div class="frm-field">
+					<div class="frm-field-range">
+						<div class="field-range">
+							<div class="frm-field-input field-datepicker js-field-input js-datepicker">
+								<input type="text" class="form-input" placeholder="From">
+							</div>
+						</div>
+						<div class="field-range">
+							<div class="frm-field-input field-datepicker js-field-input js-datepicker">
+								<input type="text" class="form-input" placeholder="To">
+							</div>
+						</div>
+						<button class="btn-action-ico ico-search ico-search-att"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/popup-form-main-->
+		<!--popup-notify-list-->
+		<div class="popup-notify-list">
+			<div class="items-wrap">
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-notify">
+						<div class="nt-status-wrap">
+							<div class="elm-status-tag st-event">Event</div>
+						</div>
+						<div class="nt-title-wrap">
+							<div class="nt-date">19 Jan, 15:56</div>
+							<div class="nt-title">Channel "RTVI" was restarted by scheduler at 15:55PM (IPBE)</div>
+							<div class="nt-tags"><a href="">#RTVI</a> <a href="">#restart</a></div>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-notify">
+						<div class="nt-status-wrap">
+							<div class="elm-status-tag st-app">APP</div>
+						</div>
+						<div class="nt-title-wrap">
+							<div class="nt-date">19 Jan, 13:15</div>
+							<div class="nt-title">Failover "Sportaman_Playout" switched from Primary to Backup because: "Sync loss"</div>
+							<div class="nt-tags"><a href="">#sportaman_playout</a> <a href="">#sync_loss</a></div>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-notify">
+						<div class="nt-status-wrap">
+							<div class="elm-status-tag st-operation">OPERATION</div>
+						</div>
+						<div class="nt-title-wrap">
+							<div class="nt-date">19 Jan, 13:15</div>
+							<div class="nt-title">Form "Sportaman_Playout" was successfuly saved</div>
+							<div class="nt-tags"><a href="">#sportaman_playout</a> <a href="">#save</a></div>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+				<!--item wrap-->
+				<div class="item-wrap">
+					<div class="item-notify">
+						<div class="nt-status-wrap">
+							<div class="elm-status-tag st-monitor">MONITOR</div>
+						</div>
+						<div class="nt-title-wrap">
+							<div class="nt-date">19 Jan, 13:15</div>
+							<div class="nt-title">Channel "PBS_KIDS" has 3 CC errors on 239.0.0.1 (TXR TX)</div>
+							<div class="nt-tags"><a href="">#pbs_kids</a> <a href="">#cc_error</a></div>
+						</div>
+					</div>
+				</div>
+				<!--/item wrap-->
+			</div>
+		</div>
+		<!--/popup-notify-list-->
+		<!--pagenav-box-->
+		<div class="pagenav-box">
+			<a href="" class="btn-page active">1</a>
+			<a href="" class="btn-page">2</a>
+			<a href="" class="btn-page">3</a>
+			<a href="" class="btn-page">4</a>
+			<a href="" class="btn-page">5</a>
+			<a href="" class="btn-page-dotted">...</a>
+			<a href="" class="btn-page">24</a>
+		</div>
+		<!--/pagenav-box-->
+	</div>
+	<!--/popup-content-wrap-->
+</div>
+<!--/popup-notify-->

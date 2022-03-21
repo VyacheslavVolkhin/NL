@@ -19,8 +19,204 @@ $(document).ready(function(){
 	  });
 	  return this;
 	};
+    
+    
+    //mobile popup
+    $('.js-popup-mobile-open').on('click', function() {
+        let popupData = $(this).attr('data-popup');
+        $('.js-popup-mobile.active').removeClass('active');
+        $('.js-popup-mobile[data-popup="'+popupData+'"]').addClass('active');
+        $('body').addClass('popup-show');
+        return false;
+    })
+    $('.js-popup-mobile-close').on('click', function() {
+        $(this).parents('.js-popup-mobile').removeClass('active');
+        $('body').removeClass('popup-show');
+        return false;
+    })
+    
+    
+    //menu
+    $('.main-menu-wrap .btn-menu').on('click', function() {
+        if ($(this).parent().find('.submenu-outer-wrap')) {
+            if ($(this).parent().hasClass('open')) {
+                $(this).parent().removeClass('open');
+                $(this).parents('.menu-content-block').removeClass('open');
+            } else {
+                $(this).parents('.main-menu-wrap').find('.open').removeClass('open');
+                $(this).parents('.menu-content-block').addClass('open');
+                $(this).parent().addClass('open');
+            }
+            return false;
+        }
+    })
+    $('.main-menu-wrap .js-menu-edit').on('click', function() {
+        $(this).parent('.submenu-outer-wrap').addClass('submenu-edit');
+        return false;
+    })
+    $('.main-menu-wrap .js-menu-ok').on('click', function() {
+        $(this).parent('.submenu-outer-wrap').removeClass('submenu-edit');
+        return false;
+    })
+    $('.main-menu-wrap .js-menu-close').on('click', function() {
+        $(this).parent('.submenu-outer-wrap').removeClass('submenu-edit');
+        $(this).parents('li').removeClass('open');
+        $(this).parents('.menu-content-block').removeClass('open');
+        return false;
+    })
+    $('.main-menu-wrap .frm-select-menu.menu-main').on('click', function() {
+        if ($(this).find('input').is(':checked')) {
+            $(this).next('ul').find('input').prop( "checked", true );
+        } else {
+            $(this).next('ul').find('input').prop( "checked", false );
+        }
+    })
+    $('.main-menu-wrap .menu .btn-menu').each(function() {
+        $(this).prev('.submenu-outer-wrap').css('top', $(this).position().top)
+    })
 
-	//popup block
+    //select content toggle
+    $('input[data-content]').each(function () {
+        if ($(this).is(':checked')) {
+            let selectContent = $(this).attr('data-content');
+            $('.frm-content[data-content="' + selectContent + '"]').addClass('active');
+        }
+    })
+    $('input[data-content]').on('click', function () {
+        $('.frm-content.active').removeClass('active');
+        $('input[data-content]').each(function () {
+            if ($(this).is(':checked')) {
+                let selectContent = $(this).attr('data-content');
+                $('.frm-content[data-content="' + selectContent + '"]').addClass('active');
+            }
+        })
+    })
+    $('.btn[data-content]').on('click', function() {
+        let dataContent = $(this).attr('data-content');
+        $(this).attr('disabled', 'disabled');
+        $('.frm-content[data-content="' + dataContent + '"]').slideDown(200);
+        return false;
+    })
+    
+    
+    //view
+    if ($('.js-view-toggle').hasClass('active')) {
+        $('.js-view-box').addClass('view-rows').removeClass('view-grid');
+    } else {
+        $('.js-view-box').removeClass('view-rows').addClass('view-grid');
+    }
+    $('.js-view-toggle').on('click', function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.js-view-box').addClass('view-rows').removeClass('view-grid');
+        } else {
+            $('.js-view-box').removeClass('view-rows').addClass('view-grid');
+        }
+        return false;
+    })
+
+
+    //datepicker
+    $('.js-datepicker .form-input').datepicker({
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        showButtonPanel: true,
+        beforeShow: function( input ) {
+            setTimeout(function() {
+                var buttonPane = $( input )
+                    .datepicker( "widget" )
+                    .find( ".ui-datepicker-buttonpane" );
+
+                
+                //button morning
+                $( "<button>", {
+                    text: "morning",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-morning ui-state-default ui-priority-primary ui-corner-all");
+                
+                //button day
+                $( "<button>", {
+                    text: "day",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-day ui-state-default ui-priority-primary ui-corner-all");
+                
+                //button evening
+                $( "<button>", {
+                    text: "evening",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-evening ui-state-default ui-priority-primary ui-corner-all");
+                
+                //button night
+                $( "<button>", {
+                    text: "night",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-night ui-state-default ui-priority-primary ui-corner-all");
+                
+                
+            }, 1 );
+        },
+        onChangeMonthYear: function( year, month, instance ) {
+            setTimeout(function() {
+                var buttonPane = $( instance )
+                    .datepicker( "widget" )
+                    .find( ".ui-datepicker-buttonpane" );
+
+
+                //button morning
+                $( "<button>", {
+                    text: "morning",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-morning ui-state-default ui-priority-primary ui-corner-all");
+
+                //button day
+                $( "<button>", {
+                    text: "day",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-day ui-state-default ui-priority-primary ui-corner-all");
+
+                //button evening
+                $( "<button>", {
+                    text: "evening",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-evening ui-state-default ui-priority-primary ui-corner-all");
+
+                //button night
+                $( "<button>", {
+                    text: "night",
+                    click: function() {
+                        //function
+                    }
+                }).appendTo( buttonPane ).addClass("elm-datepicker-button ui-datepicker-night ui-state-default ui-priority-primary ui-corner-all");
+
+
+            }, 1 );
+        }
+    });
+    $('.js-datepicker-inline').datepicker({
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        showOtherMonths: true,
+        selectOtherMonths: true
+    });
+    
+	
+    //popup block
 	$('.js-popup-wrap .js-btn-toggle').on('click', function() {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -100,7 +296,84 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
+
+
+    //btn tgl
+    $('.js-btn-tgl').on('click', function () {
+        $(this).toggleClass('active');
+        return false;
+    })
+    
+    
+    //field inout
+    $('.js-field-input .js-field-clear').on('click', function() {
+        $(this).parent('.js-field-input')
+            .removeClass('inp-valid')
+            .find('.form-input').val('');
+        return false;
+    })
+    //select2
+    $('.js-field-input .select2').each(function() {
+        let sPl = $(this).attr('data-placeholder');
+        console.log(sPl);
+        $(this).select2({
+            placeholder: sPl
+        })
+    })
+    $('.js-field-input .select2').on('select2:open', function(e) {
+        $(this).parent('.js-field-input').addClass('inp-active');
+    })
+    $('.js-field-input .select2').on('select2:close', function(e) {
+        $(this).parent('.js-field-input').removeClass('inp-active');
+    })
+    $('.js-field-input .select2').on('select2:select', function(e) {
+        $(this).parent('.js-field-input').removeClass('inp-active').addClass('inp-valid');
+    })
+    $('.js-field-input .select2').on('select2:clearing', function(e) {
+        $(this).parent('.js-field-input').removeClass('inp-valid');
+    })
 	
 });
-
+window.onload = function () {
+    //field input
+    let fieldInput = document.querySelectorAll('.js-field-input');
+    if (fieldInput.length > 0) {
+        for (i = 0; i < fieldInput.length; i++) {
+            fieldInput[i].querySelector('label').onclick = function () {
+                this.parentElement.classList.add('inp-active');
+                this.parentElement.classList.remove('inp-valid');
+                this.parentElement.querySelector('input').focus();
+            }
+            //input
+            if (fieldInput[i].querySelector('input')) {
+                fieldInput[i].querySelector('input').onfocus = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('input').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.value.length == "0") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+                //select
+            } else if (fieldInput[i].querySelector('select')) {
+                fieldInput[i].querySelector('select').onchange = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('select').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.options[this.selectedIndex].text === "") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+            }
+        }
+    }
+}
 

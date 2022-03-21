@@ -1,9 +1,11 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #323232;
+	--clr-att: #FAA74A;
+    --clr-border: #C6CACC;
+    --clr-online: #2FA84F;
 
-	--min: 320px;
-	--max: 1200px;
+	--min: 360px;
+	--max: 1380px;
 
 	font-size: 10px;
 }
@@ -13,6 +15,8 @@
 .elm-hidden {
 	display: none;
 }
+.ft {font-family: 'Open Sans Condensed';}
+.fm {font-family: 'Open Sans', sans-serif;}
 /* ----------------------------------- *\
 			main styles
 \* ----------------------------------- */
@@ -48,15 +52,14 @@ a.link-main, .link-main {
 		border-bottom: none;
 	}
 }
-h1, .h1-title,
-h2, .h2-title,
-h3, .h3-title,
-h4, .h4-title,
-h5, .h5-title,
-h6, .h6-title {
-	display: block;
-	position: relative;
-    &:first-child {
-        margin-top: 0;
-    }
+.main-title {
+    font-size: 22px;
+    line-height: 26/22;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+    .ft;
+}
+.text-red {
+    color: #EA3D2F;
+    display: inline;
 }

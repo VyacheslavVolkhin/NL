@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- build:section head -->
+    <!-- /build -->
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            
+            <!-- build:section header -->
+            <!-- /build -->
+
+            <!-- page -->
+            <div class="page">
+	
+				<!--filter-box-->
+				<form action="/" class="filter-box mobile-popup-box js-popup-mobile" data-popup="popup-filter">
+					<div class="popup-outer-wrap">
+						<a href="" class="btn-action-ico ico-close-small js-popup-mobile-close"></a>
+						<div class="popup-title">Filters</div>
+						<div class="popup-content-wrap">
+							<div class="frm-wrap">
+								<div class="frm-row">
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">name</label>
+											<input type="text" class="form-input" placeholder="Name">
+											<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">node</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">company</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">status</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>All statuses</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">timecode</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">items per page</label>
+											<select class="form-input select2">
+												<option value="" disabled>Nothing selected</option><!--for placeholder-->
+												<option value="" selected>50</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+								</div>
+								<div class="frm-row-submit">
+									<div class="submit-button">
+										<button class="btn" type="submit">
+											<span class="button-ico">
+												<img src="./img/icons/filter.svg" alt="">
+											</span>
+											Filter
+										</button>
+									</div>
+									<div class="submit-button">
+										<button class="btn button-second" type="reset">Reset</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!--/filter-box-->
+	
+				<!--title-actions-box-->
+				<div class="title-actions-box">
+					<div class="title-wrap">
+						<div class="main-title">App list</div>
+					</div>
+					<div class="actions-wrap">
+						<div class="settings-wrap">
+							<ul>
+								<li><a href="" class="active">View all</a></li>
+								<li><a href="">Subscribed</a></li>
+							</ul>
+						</div>
+						<div class="add-wrap">
+							<a href="" class="btn button-border button-text-att">
+								<span class="button-ico">
+									<img src="./img/icons/plus-green.svg" alt="">
+								</span>
+								<span class="button-title">Add new</span>
+							</a>
+						</div>
+					</div>
+					<a href="" class="btn-action-ico ico-filter js-popup-mobile-open" data-popup="popup-filter"></a>
+				</div>
+				<!--/title-actions-box-->
+	
+				<!--tiles-box-->
+				<div class="tiles-box alignment-top max-col-3">
+					<div class="items-wrap">
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-app">
+								<div class="tile-title-wrap">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo">
+											<img src="./img/tile01.png" alt="">
+										</div>
+									</div>
+									<div class="tile-total-wrap">
+										<div class="elm-circe">
+											<img src="./img/circe.svg" alt="">
+											<div class="circe-title">QOS <div class="circe-title-total">84</div></div>
+										</div>
+									</div>
+									<div class="tile-status-wrap">
+										<div class="elm-status-tile st-active">Active</div>
+										<a href="" class="btn-action-ico ico-calendar-att" data-count="2"></a>
+										<a href="" class="btn-action-ico ico-min"></a>
+									</div>
+								</div>
+								<div class="tile-graphics-wrap">
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/01.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Cpu/Governor mode</div>
+											<div class="info-value">1.8% (powersave)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/02.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Load Average</div>
+											<div class="info-value">1.49 (CPU cores: 32)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/03.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Memory</div>
+											<div class="info-value">2.37 GB/31.33 GB</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-tabs-wrap js-tabs-nav">
+									<ul>
+										<li><a href="" class="btn-action-tab active" data-tab="tab-tile01-01">ENCODER LOG</a></li>
+										<li><a href="" class="btn-action-tab" data-tab="tab-tile01-02">DECODER LOG</a></li>
+									</ul>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile01-01">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile01-02">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-refresh"></a>
+									<a href="" class="btn-action-ico ico-stop"></a>
+									<a href="" class="btn-action-ico ico-edit-att"></a>
+									<a href="" class="btn-action-ico ico-v-show"></a>
+									<div class="actions-right">
+										<a href="" class="btn-action-ico ico-delete-att"></a>
+									</div>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-app">
+								<div class="tile-title-wrap">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo">
+											<img src="./img/tile01.png" alt="">
+										</div>
+									</div>
+									<div class="tile-total-wrap">
+										<div class="elm-circe">
+											<img src="./img/circe.svg" alt="">
+											<div class="circe-title">QOS <div class="circe-title-total">84</div></div>
+										</div>
+									</div>
+									<div class="tile-status-wrap">
+										<div class="elm-status-tile st-active">Active</div>
+										<a href="" class="btn-action-ico ico-calendar-att"></a>
+										<a href="" class="btn-action-ico ico-min"></a>
+									</div>
+								</div>
+								<div class="tile-graphics-wrap">
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/01.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Cpu/Governor mode</div>
+											<div class="info-value">1.8% (powersave)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/02.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Load Average</div>
+											<div class="info-value">1.49 (CPU cores: 32)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/03.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Memory</div>
+											<div class="info-value">2.37 GB/31.33 GB</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-tabs-wrap js-tabs-nav">
+									<ul>
+										<li><a href="" class="btn-action-tab active" data-tab="tab-tile02-01">ENCODER LOG</a></li>
+										<li><a href="" class="btn-action-tab" data-tab="tab-tile02-02">DECODER LOG</a></li>
+									</ul>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile02-01">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile02-02">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-refresh"></a>
+									<a href="" class="btn-action-ico ico-stop"></a>
+									<a href="" class="btn-action-ico ico-edit-att"></a>
+									<a href="" class="btn-action-ico ico-v-show"></a>
+									<div class="actions-right">
+										<a href="" class="btn-action-ico ico-delete-att"></a>
+									</div>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-app">
+								<div class="tile-title-wrap">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo">
+											<img src="./img/tile01.png" alt="">
+										</div>
+									</div>
+									<div class="tile-total-wrap">
+										<div class="elm-circe">
+											<img src="./img/circe.svg" alt="">
+											<div class="circe-title">QOS <div class="circe-title-total">84</div></div>
+										</div>
+									</div>
+									<div class="tile-status-wrap">
+										<div class="elm-status-tile st-active">Active</div>
+										<a href="" class="btn-action-ico ico-calendar-att"></a>
+										<a href="" class="btn-action-ico ico-min"></a>
+									</div>
+								</div>
+								<div class="tile-graphics-wrap">
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/01.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Cpu/Governor mode</div>
+											<div class="info-value">1.8% (powersave)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/02.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Load Average</div>
+											<div class="info-value">1.49 (CPU cores: 32)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/03.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Memory</div>
+											<div class="info-value">2.37 GB/31.33 GB</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-tabs-wrap js-tabs-nav">
+									<ul>
+										<li><a href="" class="btn-action-tab active" data-tab="tab-tile03-01">ENCODER LOG</a></li>
+										<li><a href="" class="btn-action-tab" data-tab="tab-tile03-02">DECODER LOG</a></li>
+									</ul>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile03-01">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile03-02">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-refresh"></a>
+									<a href="" class="btn-action-ico ico-stop"></a>
+									<a href="" class="btn-action-ico ico-edit-att"></a>
+									<a href="" class="btn-action-ico ico-v-show"></a>
+									<div class="actions-right">
+										<a href="" class="btn-action-ico ico-delete-att"></a>
+									</div>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-app">
+								<div class="tile-title-wrap">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo">
+											<img src="./img/tile01.png" alt="">
+										</div>
+									</div>
+									<div class="tile-total-wrap">
+										<div class="elm-circe">
+											<img src="./img/circe.svg" alt="">
+											<div class="circe-title">QOS <div class="circe-title-total">84</div></div>
+										</div>
+									</div>
+									<div class="tile-status-wrap">
+										<div class="elm-status-tile st-active">Active</div>
+										<a href="" class="btn-action-ico ico-calendar-att"></a>
+										<a href="" class="btn-action-ico ico-min"></a>
+									</div>
+								</div>
+								<div class="tile-graphics-wrap">
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/01.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Cpu/Governor mode</div>
+											<div class="info-value">1.8% (powersave)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/02.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Load Average</div>
+											<div class="info-value">1.49 (CPU cores: 32)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/03.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Memory</div>
+											<div class="info-value">2.37 GB/31.33 GB</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-tabs-wrap js-tabs-nav">
+									<ul>
+										<li><a href="" class="btn-action-tab active" data-tab="tab-tile04-01">ENCODER LOG</a></li>
+										<li><a href="" class="btn-action-tab" data-tab="tab-tile04-02">DECODER LOG</a></li>
+									</ul>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile04-01">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile04-02">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-refresh"></a>
+									<a href="" class="btn-action-ico ico-stop"></a>
+									<a href="" class="btn-action-ico ico-edit-att"></a>
+									<a href="" class="btn-action-ico ico-v-show"></a>
+									<div class="actions-right">
+										<a href="" class="btn-action-ico ico-delete-att"></a>
+									</div>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-app">
+								<div class="tile-title-wrap">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo">
+											<img src="./img/tile01.png" alt="">
+										</div>
+									</div>
+									<div class="tile-total-wrap">
+										<div class="elm-circe">
+											<img src="./img/circe.svg" alt="">
+											<div class="circe-title">QOS <div class="circe-title-total">84</div></div>
+										</div>
+									</div>
+									<div class="tile-status-wrap">
+										<div class="elm-status-tile st-active">Active</div>
+										<a href="" class="btn-action-ico ico-calendar-att" data-count="2"></a>
+										<a href="" class="btn-action-ico ico-min"></a>
+									</div>
+								</div>
+								<div class="tile-graphics-wrap">
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/01.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Cpu/Governor mode</div>
+											<div class="info-value">1.8% (powersave)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/02.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Load Average</div>
+											<div class="info-value">1.49 (CPU cores: 32)</div>
+										</div>
+									</div>
+									<div class="tile-gwrap">
+										<div class="gwrap-pic">
+											<img src="./img/03.svg" alt="" style="width: 100%;">
+										</div>
+										<div class="g-wrap-info">
+											<div class="info-title">Memory</div>
+											<div class="info-value">2.37 GB/31.33 GB</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-tabs-wrap js-tabs-nav">
+									<ul>
+										<li><a href="" class="btn-action-tab active" data-tab="tab-tile05-01">ENCODER LOG</a></li>
+										<li><a href="" class="btn-action-tab" data-tab="tab-tile05-02">DECODER LOG</a></li>
+									</ul>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile05-01">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-list-wrap js-tab-block" data-tab="tab-tile05-02">
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: using SAR=1/1</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">kernel: [7722841.356673] obecli[2738148]:  segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+									</div>
+									<div class="tile-list-item">
+										<div class="list-title">Jan  5 07:33:14</div>
+										<div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-refresh"></a>
+									<a href="" class="btn-action-ico ico-stop"></a>
+									<a href="" class="btn-action-ico ico-edit-att"></a>
+									<a href="" class="btn-action-ico ico-v-show"></a>
+									<div class="actions-right">
+										<a href="" class="btn-action-ico ico-delete-att"></a>
+									</div>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+					</div>
+				</div>
+				<!--/tiles-box-->
+				
+            </div>
+            <!-- /page -->
+            
+            <!-- build:section footer -->
+            <!-- /build -->
+            
+        </div>
+        <!-- /wrap -->
+
+        <!-- build:section scripts -->
+        <!-- /build -->
+    
+    </body>
+</html>

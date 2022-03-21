@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- build:section head -->
+    <!-- /build -->
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            
+            <!-- build:section header -->
+            <!-- /build -->
+
+            <!-- page -->
+            <div class="page">
+	
+				<!--filter-box-->
+				<form action="/" class="filter-box mobile-popup-box js-popup-mobile" data-popup="popup-filter">
+					<div class="popup-outer-wrap">
+						<a href="" class="btn-action-ico ico-close-small js-popup-mobile-close"></a>
+						<div class="popup-title">Filters</div>
+						<div class="popup-content-wrap">
+							<div class="frm-wrap">
+								<div class="frm-row">
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">name</label>
+											<input type="text" class="form-input" placeholder="Name">
+											<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">node</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">company</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">status</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>All statuses</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">timecode</label>
+											<select class="form-input select2">
+												<option value="" disabled selected>Nothing selected</option><!--for placeholder-->
+												<option value="">Option 1</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input js-field-input">
+											<label class="field-label">items per page</label>
+											<select class="form-input select2">
+												<option value="" disabled>Nothing selected</option><!--for placeholder-->
+												<option value="" selected>50</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+								</div>
+								<div class="frm-row-submit">
+									<div class="submit-button">
+										<button class="btn" type="submit">
+											<span class="button-ico">
+												<img src="./img/icons/filter.svg" alt="">
+											</span>
+											Filter
+										</button>
+									</div>
+									<div class="submit-button">
+										<button class="btn button-second" type="reset">Reset</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<!--/filter-box-->
+	
+				<!--page-actions-box-->
+				<div class="page-actions-box">
+					<div class="actions-wrap">
+						<div class="action-wrap action-button">
+							<a href="" class="btn button-att">
+								<span class="button-ico">
+									<img src="./img/icons/plus.svg" alt="">
+								</span>
+								Add new
+							</a>
+						</div>
+						<div class="action-wrap action-select">
+							<div class="frm-field-input field-inline js-field-input">
+								<select class="form-input select2">
+									<option value="" disabled selected>Action with selected items</option><!--for placeholder-->
+									<option value="">Option 1</option>
+									<option value="">Option 2</option>
+									<option value="">Option 3</option>
+									<option value="">Option 4</option>
+									<option value="">Option 5</option>
+									<option value="">Option 6</option>
+									<option value="">Option 7</option>
+									<option value="">Option 8</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="views-wrap">
+						<div class="title-wrap">Showing 1 to 50 of 192 entries. View as:</div>
+						<div class="views-actions-wrap">
+							<a href="" class="btn-action-ico ico-view js-view-toggle active"></a>
+							<a href="" class="btn-action-ico ico-sort js-btn-tgl"></a>
+						</div>
+					</div>
+					<a href="" class="btn-action-ico ico-filter js-popup-mobile-open" data-popup="popup-filter"></a>
+				</div>
+				<!--/page-actions-box-->
+	
+				<!--tiles-box-->
+				<div class="tiles-box js-view-box">
+					<div class="tiles-title-wrap">
+						<div class="tile-title title-check"></div>
+						<div class="tile-title title-photo"></div>
+						<div class="tile-title title-name">Name, node</div>
+						<div class="tile-title title-status">Status</div>
+						<div class="tile-title title-runtime">Runtime</div>
+						<div class="tile-title title-input">Input</div>
+						<div class="tile-title title-bitrate">BItrate</div>
+						<div class="tile-title title-dest">Destinations</div>
+						<div class="tile-title title-actions">Actions</div>
+					</div>
+					<div class="items-wrap">
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile01">
+									<label for="select-tile01"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo">
+												<img src="./img/tile01.png" alt="">
+											</div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-active">Active</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-pause"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile02">
+									<label for="select-tile02"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo photo-na"></div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-stopped">Stopped</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle active">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-play"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile03">
+									<label for="select-tile03"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo">
+												<img src="./img/tile02.png" alt="">
+											</div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-active">Active</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle active">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-pause"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile04">
+									<label for="select-tile04"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo photo-pd"></div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-error">Error</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-pause"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile05">
+									<label for="select-tile05"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo photo-na"></div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-stopped">Stopped</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle active">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-play"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile06">
+									<label for="select-tile06"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo">
+												<img src="./img/tile01.png" alt="">
+											</div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-active">Active</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-pause"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile07">
+									<label for="select-tile07"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo photo-na"></div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-stopped">Stopped</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle active">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-play"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+						<!--item wrap-->
+						<div class="item-wrap">
+							<div class="item-tile-main">
+								<div class="frm-select select-clear">
+									<input type="checkbox" id="select-tile08">
+									<label for="select-tile08"></label>
+								</div>
+								<div class="tile-main-wrap">
+									<div class="tile-left-wrap">
+										<div class="tile-photo-wrap">
+											<div class="tile-photo photo-pd"></div>
+										</div>
+										<div class="tile-status-wrap">
+											<div class="btn-action-ico ico-calendar"></div>
+											<div class="elm-status-tile st-error">Error</div>
+										</div>
+									</div>
+									<div class="tile-right-wrap">
+										<div class="tile-title-wrap">
+											<div class="tile-title">TimesNow_Zoom_Backup</div>
+											<div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
+										</div>
+										<div class="tile-info-wrap">
+											<div class="info-wrap info-runtime-wrap">
+												<div class="info-title">2y 32d <br>08h 41m</div>
+											</div>
+											<div class="info-wrap info-inputs-wrap">
+												<div class="input-wrap">
+													<div class="input-title">IDX</div>
+													<div class="input-value">3</div>
+												</div>
+												<div class="input-wrap">
+													<div class="input-title">Format</div>
+													<div class="input-value">1080i59.94</div>
+												</div>
+											</div>
+											<div class="info-wrap info-bitrate-wrap">
+												<div class="info-title">6 Mbps <br>128kbps</div>
+											</div>
+										</div>
+										<div class="tile-destinations-wrap">
+											<div class="destination-title">239.0.0.4:1234</div>
+											<a href="" class="btn-action-ico ico-plus"></a>
+										</div>
+									</div>
+								</div>
+								<div class="tile-sections-wrap">
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Performance chart</span>
+											<span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-graph-wrap">
+												<img src="./img/graph.png" alt="" style="height: 266px;">
+											</div>
+										</div>
+									</div>
+									<div class="tile-section-wrap js-popup-wrap no-close">
+										<a href="" class="btn-tile-section js-btn-toggle">
+											<span class="button-section-title">Media view</span>
+											<span class="button-section-info">2021/12/15 07:31:46</span>
+										</a>
+										<div class="tile-content-wrap js-popup-block">
+											<div class="tile-image-wrap">
+												<img src="./img/image.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tile-actions-wrap">
+									<a href="" class="btn-action-ico ico-pause"></a>
+									<a href="" class="btn-action-ico ico-move"></a>
+									<a href="" class="btn-action-ico ico-clone"></a>
+									<a href="" class="btn-action-ico ico-bookmark"></a>
+								</div>
+								<div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
+									<a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
+									<div class="menu-content-block js-popup-block">
+										<ul class="menu">
+											<li><a href="" class="btn-menu">Channel</a></li>
+											<li><a href="" class="btn-menu">History</a></li>
+											<li><a href="" class="btn-menu">Logs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/item wrap-->
+					</div>
+				</div>
+				<!--/tiles-box-->
+				
+            </div>
+            <!-- /page -->
+            
+            <!-- build:section footer -->
+            <!-- /build -->
+            
+        </div>
+        <!-- /wrap -->
+
+        <!-- build:section scripts -->
+        <!-- /build -->
+    
+    </body>
+</html>
