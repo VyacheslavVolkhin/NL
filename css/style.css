@@ -25,18 +25,18 @@
 \* ----------------------------------- */
 body {
   color: var(--clr-base, #000);
-  background: #fff;
+  background: #f0f0f0;
 }
 body::-webkit-scrollbar {
-  height: 2px;
-  width: 2px;
-  background-color: #ff0000;
+  height: 20px;
+  width: 20px;
+  background-color: #f0f;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #ff0000;
+  background-color: #ff0;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #ff0000;
+  background-color: #ff0;
 }
 body::-webkit-scrollbar-button:vertical:start:decrement {
   background-color: transparent;
