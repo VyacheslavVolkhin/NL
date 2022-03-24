@@ -4245,6 +4245,9 @@ body .select2-container--default .select2-search--dropdown .select2-search__fiel
   background-position: right 4px center;
   background-size: 24px auto;
 }
+body.compensate-for-scrollbar {
+  overflow: visible !important;
+}
 @media (max-width: 640px) {
   body .ui-datepicker:not(.ui-datepicker-inline) {
     width: 344px;
