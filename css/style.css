@@ -25,7 +25,7 @@
 \* ----------------------------------- */
 body {
   color: var(--clr-base, #000);
-  background: #f0f0f0;
+  background: #00f;
 }
 body::-webkit-scrollbar {
   height: 20px;
@@ -57,6 +57,9 @@ body::-webkit-scrollbar-button:horizontal:end:increment {
   background-color: transparent;
   width: 0;
   height: 0;
+}
+body.compensate-for-scrollbar .wrap {
+  padding-right: 20px;
 }
 p,
 ul,

@@ -22,7 +22,7 @@
 \* ----------------------------------- */
 body {
 	color: var(--clr-base, #000);
-	background: #f0f0f0;
+	background: #00f;
     &::-webkit-scrollbar {
         height: 20px;
         width: 20px;
@@ -53,6 +53,11 @@ body {
         background-color: transparent;
         width: 0;
         height: 0;
+    }
+}
+body.compensate-for-scrollbar {
+    .wrap {
+        padding-right: 20px;
     }
 }
 p, ul, ol {
