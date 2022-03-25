@@ -213,6 +213,9 @@
         display: flex;
         padding-right: 40px;
         margin-bottom: 16px;
+        .elm-status-tile {
+            margin: 0 4px 4px 0;
+        }
     }
     .tile-photo-wrap {
         display: block;
@@ -648,6 +651,14 @@
         border-radius: 9px;
         letter-spacing: 0.01em;
         .ft;
+    }
+    &.st-on {
+        background: #2FA84F;
+        color: #fff;
+    }
+    &.st-off {
+        background: #919699;
+        color: var(--clr-base);
     }
     &.st-active {
         background: #2FA84F;

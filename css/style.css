@@ -1015,6 +1015,9 @@ body {
   padding-right: 40px;
   margin-bottom: 16px;
 }
+.item-tile-app .tile-title-wrap .elm-status-tile {
+  margin: 0 4px 4px 0;
+}
 .item-tile-app .tile-photo-wrap {
   display: block;
   width: 64px;
@@ -1505,6 +1508,14 @@ body {
   border-radius: 9px;
   letter-spacing: 0.01em;
   font-family: 'Open Sans Condensed';
+}
+.elm-status-tile.st-on {
+  background: #2FA84F;
+  color: #fff;
+}
+.elm-status-tile.st-off {
+  background: #919699;
+  color: var(--clr-base);
 }
 .elm-status-tile.st-active {
   background: #2FA84F;
@@ -4515,6 +4526,10 @@ select::-ms-expand {
   right: 22px;
   background: #919699;
   border-radius: 50%;
+}
+.frm-select-toggle input:checked ~ label:before,
+.frm-select-toggle input:checked ~ label:after {
+  background: #2FA84F;
 }
 .frm-select-toggle input:checked ~ label:after {
   right: 0px;
