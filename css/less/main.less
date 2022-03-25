@@ -22,17 +22,17 @@
 \* ----------------------------------- */
 body {
 	color: var(--clr-base, #000);
-	background: #00f;
+	background: #fff;
     &::-webkit-scrollbar {
-        height: 20px;
-        width: 20px;
-        background-color: #f0f;
+        height: 4px;
+        width: 4px;
+        background-color: #f0f0f0;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: #ff0;
+        background-color: #999;
     }
     &::-webkit-scrollbar-thumb:hover {
-        background-color: #ff0;
+        background-color: #999;
     }
     &::-webkit-scrollbar-button:vertical:start:decrement {
         background-color: transparent;
@@ -57,7 +57,7 @@ body {
 }
 body.compensate-for-scrollbar {
     .wrap {
-        padding-right: 20px;
+        padding-right: 4px;
     }
 }
 p, ul, ol {
