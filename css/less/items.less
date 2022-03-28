@@ -1,6 +1,103 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+body.theme-dark {
+    .elm-status-tag {
+        background-color: #5E6366;
+        color: #E3E5E5;
+
+        &.st-app {
+            color: var(--clr-blue);
+        }
+        &.st-operation {
+            color: var(--clr-online);
+        }
+        &.st-monitor {
+            color: var(--clr-yellow);
+        }
+        &.st-blue {
+            color: var(--clr-blue);
+        }
+        &.st-green {
+            color: var(--clr-online);
+        }
+        &.st-yellow {
+            color: var(--clr-yellow);
+        }
+    }
+    .elm-status-tile {
+        color: #fff;
+        .st-on {
+            color: #323232;
+        }
+        &.st-off,
+        &.st-stopped,
+        &.st-yellow {
+            color: #fff;
+        }
+        &.st-stopped {
+            &.st-tile-second {
+                color: #fff;
+            }
+        }
+    }
+    .elm-circe .circe-title {
+        color: #919699;
+        opacity: 0.8;
+    }
+    .item-tile-app, .item-tile-main {
+        background-color: #414344;
+        color: #C6CACC;
+        .btn-action-ico {
+            &.ico-calendar {
+                filter: brightness(0) invert(1);
+                opacity: 0.6;
+            }
+        }
+    }
+    .item-tile-main .tile-section-wrap .btn-tile-section {
+        color: #919699;
+    }
+    .item-tile-main .tile-section-wrap .btn-tile-section:before {
+        opacity: 0.6;
+        filter: brightness(0) invert(1);
+    }
+    .item-tile-main .tile-title-text, .item-tile-main .tile-title-text a {
+        color: #919699;
+    }
+    .item-tile-app .tile-list-item, .item-tile-main .tile-list-item {
+        color: #fff;
+        .list-title, .list-info {
+            color: inherit;
+        }
+    }
+    .tiles-box:not(.view-rows) .item-tile-app .tile-info-wrap.info-steps:before, .tiles-box:not(.view-rows) .item-tile-main .tile-info-wrap.info-steps:before {
+        filter: brightness(0) invert(1);
+    }
+    .item-tile-app {
+        .tile-tabs-wrap {
+            .btn-action-tab {
+                &:not(.active) {
+                    background-color: #D8DAFB;
+                    border-color: #D8DAFB;
+                    &:hover {
+                        color: #367BF5;
+                    }
+                }
+                &.active {
+                    background-color: transparent;
+                    border-color: #424445;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    @media (min-width: 641px) {
+        .app-box .item-tile-app .tile-search-wrap {
+            background-color: #424445;
+        }
+    }
+}
 .tiles-box {
     &:not(.view-rows) {
         .item-tile-app,
@@ -121,8 +218,8 @@
         font-size: 10px;
         line-height: 13.62/10;
         font-weight: 600;
-        border-bottom: 1px solid #C6CACC;
-        color: #5E6366;
+        border-bottom: 1px solid var(--clr-border);
+        color: var(--clr-gray-dark);
         &:last-child {
             border-bottom: none;
         }
@@ -130,7 +227,7 @@
             display: block;
             margin: 0;
             font-weight: 300;
-            color: #262626;
+            color: var(--clr-base);
         }
     }
     .tile-photo {
@@ -164,7 +261,7 @@
     padding: 18px 8px 8px 8px;
     display: flex;
     flex-direction: column;
-    background: #EEF5FF;
+    background: var(--clr-vlight);
     border-radius: 8px;
     position: relative;
     min-height: 100%;
@@ -272,7 +369,7 @@
     }
 }
 .item-tile-main {
-    background: #EEF5FF;
+    background: var(--clr-vlight);
     border-radius: 8px;
     position: relative;
     padding: 8px;
@@ -336,7 +433,7 @@
             position: relative;
             font-size: 12px;
             line-height: 18/12;
-            color: #5E6366;
+            color: var(--clr-gray-dark);
             letter-spacing: 0.03em;
             padding: 0 30px 0 0;
             min-height: 24px;
@@ -370,7 +467,7 @@
             font-size: 14px;
             line-height: 18/14;
             font-weight: bold;
-            color: #FAA74A;
+            color: var(--clr-att);
             .ft;
         }
         .button-section-info {
@@ -453,14 +550,14 @@
         position: relative;
         font-size: 10px;
         line-height: 1.4;
-        color: #367BF5;
+        color: var(--clr-blue);
         padding: 5px 30px 5px 0;
         min-height: 24px;
         font-weight: 600;
         margin-bottom: 8px;
         a {
             display: block;
-            color: #367BF5;
+            color: var(--clr-blue);
         }
         .ico-plus {
             width: 24px;
@@ -495,10 +592,10 @@
         font-size: 12px;
         line-height: 16px;
         letter-spacing: -0.01em;
-        color: #5E6366;
+        color: var(--clr-gray-dark);
         a {
             display: block;
-            color: #5E6366;
+            color: var(--clr-gray-dark);
         }
     }
     .frm-select {
@@ -561,7 +658,7 @@
     line-height: 18px;
     font-weight: 500;
     letter-spacing: -0.03em;
-    color: #262626;
+    color: var(--clr-base);
     .event-title-wrap {
         width: 88px;
         padding: 0 8px 0 0;
@@ -581,7 +678,7 @@
         line-height: 18px;
         font-weight: 400;
         letter-spacing: 0.01em;
-        color: #EFC42B;
+        color: var(--clr-yellow);
         margin: 0;
         .ft;
     }
@@ -615,7 +712,7 @@
         text-transform: uppercase;
         font-weight: 400;
         margin: 0;
-        color: #000;
+        color: var(--clr-black);
         width: 100%;
         text-align: center;
         padding: 0 10px;
@@ -633,7 +730,7 @@
     height: 19px;
     line-height: 19px;
     border-radius: 2px;
-    background: #000;
+    background: var(--clr-black);
     padding: 0 4px;
     position: relative;
     overflow: hidden;
@@ -643,7 +740,7 @@
     font-size: 8px;
     font-weight: 400;
     flex-shrink: 0;
-    color: #fff;
+    color: var(--clr-white);
     text-transform: capitalize;
     &.st-tile-second {
         padding: 0 12px;
@@ -653,38 +750,38 @@
         .ft;
     }
     &.st-on {
-        background: #2FA84F;
-        color: #fff;
+        background: var(--clr-online);
+        color: var(--clr-white);
     }
     &.st-off {
-        background: #919699;
+        background: var(--clr-gray);
         color: var(--clr-base);
     }
     &.st-active {
-        background: #2FA84F;
+        background: var(--clr-online);
     }
     &.st-stopped {
-        background: #EFC42B;
-        color: #5E6366;
+        background: var(--clr-yellow);
+        color: var(--clr-gray-dark);
         &.st-tile-second {
             color: var(--clr-base);
         }
     }
     &.st-error {
-        background: #EA3D2F;
+        background: var(--clr-red);
     }
     &.st-cloned {
         background: #069697;
     }
     &.st-green {
-        background: #2FA84F;
+        background: var(--clr-online);
     }
     &.st-yellow {
-        background: #EFC42B;
-        color: #5E6366;
+        background: var(--clr-yellow);
+        color: var(--clr-gray-dark);
     }
     &.st-red {
-        background: #EA3D2F;
+        background: var(--clr-red);
     }
 }
 .elm-status-tag {
@@ -692,13 +789,13 @@
     align-items: center;
     height: 19px;
     border-radius: 10px;
-    background: #EEF5FF;
+    background: var(--clr-vlight);
     text-align: center;
     white-space: nowrap;
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #5E6366;
+    color: var(--clr-gray-dark);
     line-height: 11/8;
     font-size: 8px;
     letter-spacing: -0.02em;
@@ -718,29 +815,29 @@
         margin-top: -2px;
     }
     &.st-app {
-        color: #367BF5;
+        color: var(--clr-blue);
     }
     &.st-operation {
-        color: #2FA84F;
+        color: var(--clr-online);
     }
     &.st-monitor {
-        color: #EFC42B;
+        color: var(--clr-yellow);
     }
     &.st-blue {
-        color: #367BF5;
+        color: var(--clr-blue);
     }
     &.st-green {
-        color: #2FA84F;
+        color: var(--clr-online);
     }
     &.st-yellow {
-        color: #EFC42B;
+        color: var(--clr-yellow);
     }
 }
 .elm-message {
     font-size: 13px;
     line-height: 18/14;
     letter-spacing: -0.03em;
-    color: #5E6366;
+    color: var(--clr-gray-dark);
     .ms-title {
         display: block;
         font-size: 14px;
@@ -756,7 +853,7 @@
     width: 14px;
     height: 14px;
     flex-shrink: 0;
-    background: #000;
+    background: var(--clr-black);
     border-radius: 50%;
     &.st-online {
         background: var(--clr-online);

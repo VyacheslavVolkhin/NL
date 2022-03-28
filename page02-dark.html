@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
-<body class="">
+<body class="theme-dark">
     <!-- wrap -->
     <div class="wrap">
 
@@ -27,7 +27,7 @@
             <div class="inner-wrap">
                 <div class="logo-wrap">
                     <a href="" class="logo">
-                        <img src="./img/main/logo.svg" alt="">
+                        <img src="./img/main/logo-dark.svg" alt="">
                     </a>
                 </div>
                 <div class="main-menu-wrap menu-wrap js-popup-wrap">
@@ -775,136 +775,147 @@
             </form>
             <!--/filter-box-->
 
-            <!--page-actions-box-->
-            <div class="page-actions-box">
-                <div class="actions-wrap">
-                    <div class="action-wrap action-button">
-                        <a href="" class="btn button-att">
-                            <span class="button-ico">
-                                <img src="./img/icons/plus.svg" alt="">
-                            </span>
-                            Add new
-                        </a>
-                    </div>
-                    <div class="action-wrap action-select">
-                        <div class="frm-field-input field-inline js-field-input">
-                            <select class="form-input select2">
-                                <option value="" disabled selected>Action with selected items</option>
-                                <!--for placeholder-->
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Option 4</option>
-                                <option value="">Option 5</option>
-                                <option value="">Option 6</option>
-                                <option value="">Option 7</option>
-                                <option value="">Option 8</option>
-                            </select>
-                        </div>
-                    </div>
+            <!--title-actions-box-->
+            <div class="title-actions-box">
+                <div class="title-wrap">
+                    <div class="main-title">App list</div>
                 </div>
-                <div class="views-wrap">
-                    <div class="title-wrap">Showing 1 to 50 of 192 entries. View as:</div>
-                    <div class="views-actions-wrap">
-                        <a href="" class="btn-action-ico ico-view js-view-toggle active"></a>
-                        <a href="" class="btn-action-ico ico-sort js-btn-tgl"></a>
+                <div class="actions-wrap">
+                    <div class="settings-wrap">
+                        <ul>
+                            <li><a href="" class="active">View all</a></li>
+                            <li><a href="">Subscribed</a></li>
+                        </ul>
+                    </div>
+                    <div class="add-wrap">
+                        <a href="" class="btn button-border button-text-att">
+                            <span class="button-ico">
+                                <img src="./img/icons/plus-green.svg" alt="">
+                            </span>
+                            <span class="button-title">Add new</span>
+                        </a>
                     </div>
                 </div>
                 <a href="" class="btn-action-ico ico-filter js-popup-mobile-open" data-popup="popup-filter"></a>
             </div>
-            <!--/page-actions-box-->
+            <!--/title-actions-box-->
 
             <!--tiles-box-->
-            <div class="tiles-box js-view-box">
-                <div class="tiles-title-wrap">
-                    <div class="tile-title title-check"></div>
-                    <div class="tile-title title-photo"></div>
-                    <div class="tile-title title-name">Name, node</div>
-                    <div class="tile-title title-status">Status</div>
-                    <div class="tile-title title-runtime">Runtime</div>
-                    <div class="tile-title title-input">Input</div>
-                    <div class="tile-title title-bitrate">BItrate</div>
-                    <div class="tile-title title-dest">Destinations</div>
-                    <div class="tile-title title-actions">Actions</div>
-                </div>
+            <div class="tiles-box alignment-top max-col-3">
                 <div class="items-wrap">
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile01">
-                                <label for="select-tile01"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo">
-                                            <img src="./img/tile01.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-active">Active</div>
+                        <div class="item-tile-app">
+                            <div class="tile-title-wrap">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo">
+                                        <img src="./img/tile01.png" alt="">
                                     </div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
+                                <div class="tile-total-wrap">
+                                    <div class="elm-circe">
+                                        <img src="./img/circe.svg" alt="">
+                                        <div class="circe-title">QOS <div class="circe-title-total">84</div>
                                         </div>
                                     </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                </div>
+                                <div class="tile-status-wrap">
+                                    <div class="elm-status-tile st-active">Active</div>
+                                    <a href="" class="btn-action-ico ico-calendar-att" data-count="2"></a>
+                                    <a href="" class="btn-action-ico ico-min"></a>
                                 </div>
                             </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
+                            <div class="tile-graphics-wrap">
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/01.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Cpu/Governor mode</div>
+                                        <div class="info-value">1.8% (powersave)</div>
                                     </div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/02.svg" alt="" style="width: 100%;">
                                     </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Load Average</div>
+                                        <div class="info-value">1.49 (CPU cores: 32)</div>
+                                    </div>
+                                </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/03.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Memory</div>
+                                        <div class="info-value">2.37 GB/31.33 GB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-tabs-wrap js-tabs-nav">
+                                <ul>
+                                    <li><a href="" class="btn-action-tab active" data-tab="tab-tile01-01">ENCODER LOG</a></li>
+                                    <li><a href="" class="btn-action-tab" data-tab="tab-tile01-02">DECODER LOG</a></li>
+                                </ul>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile01-01">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+                                </div>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile01-02">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
                             <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-pause"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
+                                <a href="" class="btn-action-ico ico-refresh"></a>
+                                <a href="" class="btn-action-ico ico-stop"></a>
+                                <a href="" class="btn-action-ico ico-edit-att"></a>
+                                <a href="" class="btn-action-ico ico-v-show"></a>
+                                <div class="actions-right">
+                                    <a href="" class="btn-action-ico ico-delete-att"></a>
+                                </div>
                             </div>
                             <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
                                 <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
@@ -921,79 +932,117 @@
                     <!--/item wrap-->
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile02">
-                                <label for="select-tile02"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-na"></div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-stopped">Stopped</div>
+                        <div class="item-tile-app">
+                            <div class="tile-title-wrap">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo">
+                                        <img src="./img/tile01.png" alt="">
                                     </div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
+                                <div class="tile-total-wrap">
+                                    <div class="elm-circe">
+                                        <img src="./img/circe.svg" alt="">
+                                        <div class="circe-title">QOS <div class="circe-title-total">84</div>
                                         </div>
                                     </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                </div>
+                                <div class="tile-status-wrap">
+                                    <div class="elm-status-tile st-active">Active</div>
+                                    <a href="" class="btn-action-ico ico-calendar-att"></a>
+                                    <a href="" class="btn-action-ico ico-min"></a>
                                 </div>
                             </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
+                            <div class="tile-graphics-wrap">
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/01.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Cpu/Governor mode</div>
+                                        <div class="info-value">1.8% (powersave)</div>
                                     </div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle active">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/02.svg" alt="" style="width: 100%;">
                                     </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Load Average</div>
+                                        <div class="info-value">1.49 (CPU cores: 32)</div>
+                                    </div>
+                                </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/03.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Memory</div>
+                                        <div class="info-value">2.37 GB/31.33 GB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-tabs-wrap js-tabs-nav">
+                                <ul>
+                                    <li><a href="" class="btn-action-tab active" data-tab="tab-tile02-01">ENCODER LOG</a></li>
+                                    <li><a href="" class="btn-action-tab" data-tab="tab-tile02-02">DECODER LOG</a></li>
+                                </ul>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile02-01">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+                                </div>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile02-02">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
                             <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-play"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
+                                <a href="" class="btn-action-ico ico-refresh"></a>
+                                <a href="" class="btn-action-ico ico-stop"></a>
+                                <a href="" class="btn-action-ico ico-edit-att"></a>
+                                <a href="" class="btn-action-ico ico-v-show"></a>
+                                <div class="actions-right">
+                                    <a href="" class="btn-action-ico ico-delete-att"></a>
+                                </div>
                             </div>
                             <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
                                 <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
@@ -1010,81 +1059,117 @@
                     <!--/item wrap-->
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile03">
-                                <label for="select-tile03"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo">
-                                            <img src="./img/tile02.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-active">Active</div>
+                        <div class="item-tile-app">
+                            <div class="tile-title-wrap">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo">
+                                        <img src="./img/tile01.png" alt="">
                                     </div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
+                                <div class="tile-total-wrap">
+                                    <div class="elm-circe">
+                                        <img src="./img/circe.svg" alt="">
+                                        <div class="circe-title">QOS <div class="circe-title-total">84</div>
                                         </div>
                                     </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                </div>
+                                <div class="tile-status-wrap">
+                                    <div class="elm-status-tile st-active">Active</div>
+                                    <a href="" class="btn-action-ico ico-calendar-att"></a>
+                                    <a href="" class="btn-action-ico ico-min"></a>
                                 </div>
                             </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle active">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
+                            <div class="tile-graphics-wrap">
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/01.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Cpu/Governor mode</div>
+                                        <div class="info-value">1.8% (powersave)</div>
                                     </div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/02.svg" alt="" style="width: 100%;">
                                     </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Load Average</div>
+                                        <div class="info-value">1.49 (CPU cores: 32)</div>
+                                    </div>
+                                </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/03.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Memory</div>
+                                        <div class="info-value">2.37 GB/31.33 GB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-tabs-wrap js-tabs-nav">
+                                <ul>
+                                    <li><a href="" class="btn-action-tab active" data-tab="tab-tile03-01">ENCODER LOG</a></li>
+                                    <li><a href="" class="btn-action-tab" data-tab="tab-tile03-02">DECODER LOG</a></li>
+                                </ul>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile03-01">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+                                </div>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile03-02">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
                             <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-pause"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
+                                <a href="" class="btn-action-ico ico-refresh"></a>
+                                <a href="" class="btn-action-ico ico-stop"></a>
+                                <a href="" class="btn-action-ico ico-edit-att"></a>
+                                <a href="" class="btn-action-ico ico-v-show"></a>
+                                <div class="actions-right">
+                                    <a href="" class="btn-action-ico ico-delete-att"></a>
+                                </div>
                             </div>
                             <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
                                 <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
@@ -1101,79 +1186,117 @@
                     <!--/item wrap-->
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile04">
-                                <label for="select-tile04"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-pd"></div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-error">Error</div>
+                        <div class="item-tile-app">
+                            <div class="tile-title-wrap">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo">
+                                        <img src="./img/tile01.png" alt="">
                                     </div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
+                                <div class="tile-total-wrap">
+                                    <div class="elm-circe">
+                                        <img src="./img/circe.svg" alt="">
+                                        <div class="circe-title">QOS <div class="circe-title-total">84</div>
                                         </div>
                                     </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                </div>
+                                <div class="tile-status-wrap">
+                                    <div class="elm-status-tile st-active">Active</div>
+                                    <a href="" class="btn-action-ico ico-calendar-att"></a>
+                                    <a href="" class="btn-action-ico ico-min"></a>
                                 </div>
                             </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
+                            <div class="tile-graphics-wrap">
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/01.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Cpu/Governor mode</div>
+                                        <div class="info-value">1.8% (powersave)</div>
                                     </div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/02.svg" alt="" style="width: 100%;">
                                     </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Load Average</div>
+                                        <div class="info-value">1.49 (CPU cores: 32)</div>
+                                    </div>
+                                </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/03.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Memory</div>
+                                        <div class="info-value">2.37 GB/31.33 GB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile-tabs-wrap js-tabs-nav">
+                                <ul>
+                                    <li><a href="" class="btn-action-tab active" data-tab="tab-tile04-01">ENCODER LOG</a></li>
+                                    <li><a href="" class="btn-action-tab" data-tab="tab-tile04-02">DECODER LOG</a></li>
+                                </ul>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile04-01">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
+                                </div>
+                            </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile04-02">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
                             <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-pause"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
+                                <a href="" class="btn-action-ico ico-refresh"></a>
+                                <a href="" class="btn-action-ico ico-stop"></a>
+                                <a href="" class="btn-action-ico ico-edit-att"></a>
+                                <a href="" class="btn-action-ico ico-v-show"></a>
+                                <div class="actions-right">
+                                    <a href="" class="btn-action-ico ico-delete-att"></a>
+                                </div>
                             </div>
                             <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
                                 <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
@@ -1190,348 +1313,117 @@
                     <!--/item wrap-->
                     <!--item wrap-->
                     <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile05">
-                                <label for="select-tile05"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-na"></div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-stopped">Stopped</div>
+                        <div class="item-tile-app">
+                            <div class="tile-title-wrap">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo">
+                                        <img src="./img/tile01.png" alt="">
                                     </div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
+                                <div class="tile-total-wrap">
+                                    <div class="elm-circe">
+                                        <img src="./img/circe.svg" alt="">
+                                        <div class="circe-title">QOS <div class="circe-title-total">84</div>
                                         </div>
                                     </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                </div>
+                                <div class="tile-status-wrap">
+                                    <div class="elm-status-tile st-active">Active</div>
+                                    <a href="" class="btn-action-ico ico-calendar-att" data-count="2"></a>
+                                    <a href="" class="btn-action-ico ico-min"></a>
                                 </div>
                             </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
+                            <div class="tile-graphics-wrap">
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/01.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Cpu/Governor mode</div>
+                                        <div class="info-value">1.8% (powersave)</div>
                                     </div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle active">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/02.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Load Average</div>
+                                        <div class="info-value">1.49 (CPU cores: 32)</div>
+                                    </div>
+                                </div>
+                                <div class="tile-gwrap">
+                                    <div class="gwrap-pic">
+                                        <img src="./img/03.svg" alt="" style="width: 100%;">
+                                    </div>
+                                    <div class="g-wrap-info">
+                                        <div class="info-title">Memory</div>
+                                        <div class="info-value">2.37 GB/31.33 GB</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-play"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
+                            <div class="tile-tabs-wrap js-tabs-nav">
+                                <ul>
+                                    <li><a href="" class="btn-action-tab active" data-tab="tab-tile05-01">ENCODER LOG</a></li>
+                                    <li><a href="" class="btn-action-tab" data-tab="tab-tile05-02">DECODER LOG</a></li>
+                                </ul>
                             </div>
-                            <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
-                                <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
-                                <div class="popup-menu-content-block js-popup-block">
-                                    <ul class="menu">
-                                        <li><a href="" class="btn-menu">Channel</a></li>
-                                        <li><a href="" class="btn-menu">History</a></li>
-                                        <li><a href="" class="btn-menu">Logs</a></li>
-                                    </ul>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile05-01">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!--/item wrap-->
-                    <!--item wrap-->
-                    <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile06">
-                                <label for="select-tile06"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo">
-                                            <img src="./img/tile01.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-active">Active</div>
-                                    </div>
+                            <div class="tile-list-wrap js-tab-block" data-tab="tab-tile05-02">
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: using SAR=1/1</div>
                                 </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: Opened DeckLink PCI card 10 (DeckLink Duo 2)</div>
                                 </div>
-                            </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
-                                    </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
                                 </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
-                                    </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">kernel: [7722841.356673] obecli[2738148]: segfault at 7fdd58000ed8 ip 00007f9d83dfc7e4 sp 00007f9d6c7cff48 error 4 in libc-2.31.so[7f9d83c93000+178000]</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[1320344]: profile Main, level 4.0</div>
+                                </div>
+                                <div class="tile-list-item">
+                                    <div class="list-title">Jan 5 07:33:14</div>
+                                    <div class="list-info">obe[4064828]: speedcontrol underflow (-0.034018 sec)</div>
                                 </div>
                             </div>
                             <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-pause"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
-                            </div>
-                            <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
-                                <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
-                                <div class="popup-menu-content-block js-popup-block">
-                                    <ul class="menu">
-                                        <li><a href="" class="btn-menu">Channel</a></li>
-                                        <li><a href="" class="btn-menu">History</a></li>
-                                        <li><a href="" class="btn-menu">Logs</a></li>
-                                    </ul>
+                                <a href="" class="btn-action-ico ico-refresh"></a>
+                                <a href="" class="btn-action-ico ico-stop"></a>
+                                <a href="" class="btn-action-ico ico-edit-att"></a>
+                                <a href="" class="btn-action-ico ico-v-show"></a>
+                                <div class="actions-right">
+                                    <a href="" class="btn-action-ico ico-delete-att"></a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/item wrap-->
-                    <!--item wrap-->
-                    <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile07">
-                                <label for="select-tile07"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-na"></div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-stopped">Stopped</div>
-                                    </div>
-                                </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">MX1-RRSat Tel Aviv, Israel, Box 1 TOP - COLOUR BARS NOT USED (0034-encoder) - S763108</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle active">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-play"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
-                            </div>
-                            <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
-                                <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>
-                                <div class="popup-menu-content-block js-popup-block">
-                                    <ul class="menu">
-                                        <li><a href="" class="btn-menu">Channel</a></li>
-                                        <li><a href="" class="btn-menu">History</a></li>
-                                        <li><a href="" class="btn-menu">Logs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/item wrap-->
-                    <!--item wrap-->
-                    <div class="item-wrap">
-                        <div class="item-tile-main">
-                            <div class="frm-select select-clear">
-                                <input type="checkbox" id="select-tile08">
-                                <label for="select-tile08"></label>
-                            </div>
-                            <div class="tile-main-wrap">
-                                <div class="tile-left-wrap">
-                                    <div class="tile-photo-wrap">
-                                        <div class="tile-photo photo-pd"></div>
-                                    </div>
-                                    <div class="tile-status-wrap">
-                                        <div class="btn-action-ico ico-calendar"></div>
-                                        <div class="elm-status-tile st-error">Error</div>
-                                    </div>
-                                </div>
-                                <div class="tile-right-wrap">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-title">TimesNow_Zoom_Backup</div>
-                                        <div class="tile-title-text">Onboarding Process ** TIMES Network INDIA Secondary (smc-ubuntu20-server2) - X837256</div>
-                                    </div>
-                                    <div class="tile-info-wrap">
-                                        <div class="info-wrap info-runtime-wrap">
-                                            <div class="info-title">2y 32d <br>08h 41m</div>
-                                        </div>
-                                        <div class="info-wrap info-inputs-wrap">
-                                            <div class="input-wrap">
-                                                <div class="input-title">IDX</div>
-                                                <div class="input-value">3</div>
-                                            </div>
-                                            <div class="input-wrap">
-                                                <div class="input-title">Format</div>
-                                                <div class="input-value">1080i59.94</div>
-                                            </div>
-                                        </div>
-                                        <div class="info-wrap info-bitrate-wrap">
-                                            <div class="info-title">6 Mbps <br>128kbps</div>
-                                        </div>
-                                    </div>
-                                    <div class="tile-destinations-wrap">
-                                        <div class="destination-title">239.0.0.4:1234</div>
-                                        <a href="" class="btn-action-ico ico-plus"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile-sections-wrap">
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Performance chart</span>
-                                        <span class="button-section-info">239.5.171.8:1234 - Mbps / Time</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-graph-wrap">
-                                            <img src="./img/graph.png" alt="" style="height: 266px;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tile-section-wrap js-popup-wrap no-close">
-                                    <a href="" class="btn-tile-section js-btn-toggle">
-                                        <span class="button-section-title">Media view</span>
-                                        <span class="button-section-info">2021/12/15 07:31:46</span>
-                                    </a>
-                                    <div class="tile-content-wrap js-popup-block">
-                                        <div class="tile-image-wrap">
-                                            <img src="./img/image.jpg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tile-actions-wrap">
-                                <a href="" class="btn-action-ico ico-pause"></a>
-                                <a href="" class="btn-action-ico ico-move"></a>
-                                <a href="" class="btn-action-ico ico-clone"></a>
-                                <a href="" class="btn-action-ico ico-bookmark"></a>
                             </div>
                             <div class="dotted-menu-wrap tile-menu-wrap js-popup-wrap">
                                 <a href="" class="btn-action-ico ico-dotted js-btn-toggle"></a>

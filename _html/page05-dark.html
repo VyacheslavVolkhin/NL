@@ -2,11 +2,11 @@
 <html lang="ru">
     <!-- build:section head -->
     <!-- /build -->
-    <body class="">
+	<body class="theme-dark">
         <!-- wrap -->
         <div class="wrap">
             
-            <!-- build:section header -->
+            <!-- build:section headerdark -->
             <!-- /build -->
 
             <!-- page -->
@@ -225,11 +225,24 @@
 							<!--frm-row-->
 							<div class="frm-row">
 								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  inp-valid js-field-input">
-										<label class="field-label">MUXER</label>
+								<div class="frm-field">
+									<div class="frm-field-input field-label-title  js-field-input">
+										<label class="field-label">Application name</label>
+										<input type="text" class="form-input">
+										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+									</div>
+								</div>
+								<!--/frm-field-->
+							</div>
+							<!--/frm-row-->
+							<!--frm-row-->
+							<div class="frm-row">
+								<!--frm-field-->
+								<div class="frm-field">
+									<div class="frm-field-input  js-field-input">
+										<label class="field-label">company</label>
 										<select class="form-input select2">
-											<option value="">Mainconcept, libmpegts</option>
+											<option value="" disabled selected>No company</option>
 											<option value="">Option 2</option>
 											<option value="">Option 3</option>
 											<option value="">Option 4</option>
@@ -241,191 +254,123 @@
 									</div>
 								</div>
 								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  js-field-input" data-unit="mbps">
-										<label class="field-label">Muxrate</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
 							</div>
 							<!--/frm-row-->
 							<!--frm-row-->
 							<div class="frm-row">
 								<!--frm-field-->
-								<div class="frm-field field-half field-full-mobile">
+								<div class="frm-field">
 									<div class="frm-field-input field-label-title inp-valid js-field-input">
-										<label class="field-label">Service name</label>
-										<input type="text" class="form-input" value="My service name">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-half field-full-mobile">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">Service Provider</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row">
-								<!--frm-field-->
-								<div class="frm-field">
-									<div class="frm-field-input field-label-title inp-error js-field-input">
-										<label class="field-label">Program number</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-									<div class="frm-message ms-error">This field can’t be empty</div>
-								</div>
-								<!--/frm-field-->
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row">
-								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">Video Pid</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">Audio Pid (separate with comma)</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row">
-								<!--frm-field-->
-								<div class="frm-field field-quarter">
-									<div class="frm-field-input field-label-title inp-attention js-field-input">
-										<label class="field-label">PMT Pid</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-									<div class="frm-message ms-attention">3-10 symbols only</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-quarter">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">PMT Period</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-quarter">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">PCR Pid</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-quarter">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">PCR Period</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row">
-								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">TS ID</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-half">
-									<div class="frm-field-input field-label-title  js-field-input">
-										<label class="field-label">SCTE (pid=N)</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row">
-								<!--frm-field-->
-								<div class="frm-field field-main">
-									<div class="frm-field-input field-label-title  js-field-input" data-unit="IMG">
-										<label class="field-label">Slate Image</label>
-										<input type="text" class="form-input">
-										<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
-									</div>
-								</div>
-								<!--/frm-field-->
-								<!--frm-field-->
-								<div class="frm-field field-button">
-									<button class="btn button-second">Browse Files</button>
-								</div>
-								<!--/frm-field-->
-								<div class="frm-message">Accepted File Types : Accepted File Types : .jp[e]g, .png, .gif</div>
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row row-space">
-								<div class="frm-field">
-									<div class="frm-file-attach">
-										<div class="file-preview elm-photo photo-cover">
-											<img src="./img/file.jpg" alt="">
-										</div>
-										<div class="file-info-wrap">
-											<div class="file-title">art-unreal-creativity-file.jpg</div>
-											<div class="file-info">68.3 Kb</div>
-										</div>
-										<a href="" class="btn-action-ico ico-delete"></a>
-									</div>
-									<div class="frm-file-attach">
-										<div class="file-preview elm-photo photo-cover">
-											<img src="./img/file.jpg" alt="">
-										</div>
-										<div class="file-info-wrap">
-											<div class="file-title">art-unreal-creativity-file.jpg</div>
-											<div class="file-info">68.3 Kb</div>
-										</div>
-										<a href="" class="btn-action-ico ico-delete"></a>
-									</div>
-								</div>
-							</div>
-							<!--/frm-row-->
-							<!--frm-row-->
-							<div class="frm-row row-space">
-								<!--frm-field-->
-								<div class="frm-field field-main">
-									<div class="frm-field-input field-label-title  inp-valid js-field-input">
-										<label class="field-label">card idx</label>
+										<label class="field-label">node</label>
 										<select class="form-input select2">
-											<option value="">2</option>
+											<option value="" selected>(Pre-install) NXT-RXm3-4S-180 - SANTA ANA, CA (NXT-RXm3-4S-180) - B319487</option>
+											<option value="">Option 2</option>
+											<option value="">Option 3</option>
+											<option value="">Option 4</option>
+											<option value="">Option 5</option>
+											<option value="">Option 6</option>
+											<option value="">Option 7</option>
+											<option value="">Option 8</option>
+										</select>
+									</div>
+								</div>
+								<!--/frm-field-->
+							</div>
+							<!--/frm-row-->
+							<!--frm-section-->
+							<div class="frm-section">
+								<!--frm-row-->
+								<div class="frm-row">
+									<!--frm-field-->
+									<div class="frm-field">
+										<div class="frm-field-input field-label-title inp-valid js-field-input">
+											<label class="field-label">Application Type</label>
+											<select class="form-input select2">
+												<option value="" selected>IPBE</option>
+												<option value="">Option 2</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+								</div>
+								<!--/frm-row-->
+								<!--frm-row-->
+								<div class="frm-row row-action">
+									<!--frm-field-->
+									<div class="frm-field field-third">
+										<div class="frm-field-input field-label-title  js-field-input">
+											<label class="field-label">Output IP</label>
+											<input type="text" class="form-input">
+											<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field field-third">
+										<div class="frm-field-input field-label-title  js-field-input">
+											<label class="field-label">Output Port</label>
+											<input type="text" class="form-input">
+											<a href="" class="btn-action-ico ico-clear js-field-clear"></a>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<!--frm-field-->
+									<div class="frm-field field-third">
+										<div class="frm-field-input field-label-title js-field-input">
+											<label class="field-label">TTL</label>
+											<select class="form-input select2">
+												<option value="" disabled selected></option>
+												<option value="">Option 3</option>
+												<option value="">Option 3</option>
+												<option value="">Option 4</option>
+												<option value="">Option 5</option>
+												<option value="">Option 6</option>
+												<option value="">Option 7</option>
+												<option value="">Option 8</option>
+											</select>
+										</div>
+									</div>
+									<!--/frm-field-->
+									<a href="" class="btn-action-ico button-main ico-plus-att"></a>
+								</div>
+								<!--/frm-row-->
+							</div>
+							<!--/frm-section-->
+							<!--frm-row-->
+							<div class="frm-row">
+								<!--frm-field-->
+								<div class="frm-field">
+									<div class="frm-field-input field-label-title inp-valid js-field-input">
+										<label class="field-label">Video Connection</label>
+										<select class="form-input select2">
+											<option value="" selected>HDMI</option>
+											<option value="">Option 2</option>
+											<option value="">Option 3</option>
+											<option value="">Option 4</option>
+											<option value="">Option 5</option>
+											<option value="">Option 6</option>
+											<option value="">Option 7</option>
+											<option value="">Option 8</option>
+										</select>
+									</div>
+								</div>
+								<!--/frm-field-->
+							</div>
+							<!--/frm-row-->
+							<!--frm-row-->
+							<div class="frm-row">
+								<!--frm-field-->
+								<div class="frm-field field-half">
+									<div class="frm-field-input field-label-title inp-valid js-field-input">
+										<label class="field-label">encoder version</label>
+										<select class="form-input select2">
+											<option value="" selected>original ipbe, r1.0</option>
 											<option value="">Option 2</option>
 											<option value="">Option 3</option>
 											<option value="">Option 4</option>
@@ -438,35 +383,57 @@
 								</div>
 								<!--/frm-field-->
 								<!--frm-field-->
-								<div class="frm-field field-icons">
-									<div class="frm-field-icons">
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico01.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico02.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico03.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico04.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico05.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico06.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico07.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico08.svg" alt="">
-										</div>
-										<div class="frm-ico">
-											<img src="./img/icons/frm-ico09.svg" alt="">
-										</div>
+								<div class="frm-field field-half">
+									<div class="frm-field-input field-label-title inp-valid js-field-input">
+										<label class="field-label">Latency</label>
+										<select class="form-input select2">
+											<option value="" selected>Auto</option>
+											<option value="">Option 2</option>
+											<option value="">Option 3</option>
+											<option value="">Option 4</option>
+											<option value="">Option 5</option>
+											<option value="">Option 6</option>
+											<option value="">Option 7</option>
+											<option value="">Option 8</option>
+										</select>
+									</div>
+								</div>
+								<!--/frm-field-->
+							</div>
+							<!--/frm-row-->
+							<!--frm-row-->
+							<div class="frm-row">
+								<!--frm-field-->
+								<div class="frm-field field-half">
+									<div class="frm-field-input field-label-title inp-valid js-field-input">
+										<label class="field-label">Input Format</label>
+										<select class="form-input select2">
+											<option value="" selected>Auto-detect</option>
+											<option value="">Option 2</option>
+											<option value="">Option 3</option>
+											<option value="">Option 4</option>
+											<option value="">Option 5</option>
+											<option value="">Option 6</option>
+											<option value="">Option 7</option>
+											<option value="">Option 8</option>
+										</select>
+									</div>
+								</div>
+								<!--/frm-field-->
+								<!--frm-field-->
+								<div class="frm-field field-half">
+									<div class="frm-field-input field-label-title inp-valid js-field-input">
+										<label class="field-label">Output Type</label>
+										<select class="form-input select2">
+											<option value="" selected>UDP</option>
+											<option value="">Option 2</option>
+											<option value="">Option 3</option>
+											<option value="">Option 4</option>
+											<option value="">Option 5</option>
+											<option value="">Option 6</option>
+											<option value="">Option 7</option>
+											<option value="">Option 8</option>
+										</select>
 									</div>
 								</div>
 								<!--/frm-field-->
