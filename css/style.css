@@ -1588,6 +1588,57 @@ body.theme-dark .item-tile-app .tile-tabs-wrap .btn-action-tab.active {
   width: 32px;
   height: 36px;
 }
+.theme-dark .elm-tooltip {
+  background: #919699;
+}
+.theme-dark .elm-tooltip:before {
+  border-top-color: #919699;
+}
+.elm-tooltip {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  padding: 4px;
+  border-radius: 2px;
+  background: #323232;
+  min-width: 156px;
+  z-index: 100;
+  position: relative;
+}
+.elm-tooltip.top-right:before {
+  top: auto;
+  bottom: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.elm-tooltip.top-left:before {
+  top: auto;
+  bottom: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: auto;
+  left: 8px;
+}
+.elm-tooltip.bottom-left:before {
+  right: auto;
+  left: 8px;
+}
+.elm-tooltip:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-top-color: #323232;
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  margin-top: -1px;
+}
 .elm-circe {
   display: -webkit-box;
   display: -ms-flexbox;

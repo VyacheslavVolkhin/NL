@@ -687,6 +687,61 @@ body.theme-dark {
         height: 36px;
     }
 }
+.theme-dark {
+    .elm-tooltip {
+        background: #919699;
+        &:before {
+            border-top-color: #919699;
+        }
+    }
+}
+.elm-tooltip {
+    display: inline-flex;
+    font-size: 10px;
+    line-height: 14/10;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    padding: 4px;
+    border-radius: 2px;
+    background: #323232;
+    min-width: 156px;
+    z-index: 100;
+    position: relative;
+    &.top-right {
+        &:before {
+            top: auto;
+            bottom: 100%;
+            .t-rotate(180deg);
+        }
+    }
+    &.top-left {
+        &:before {
+            top: auto;
+            bottom: 100%;
+            .t-rotate(180deg);
+            right: auto;
+            left: 8px;
+        }
+    }
+    &.bottom-left {
+        &:before {
+            right: auto;
+            left: 8px;
+        }
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 8px solid fade(#000, 0);
+        border-top-color: #323232;
+        position: absolute;
+        top: 100%;
+        right: 8px;
+        margin-top: -1px;
+    }
+}
 .elm-circe {
     display: flex;
     flex-direction: column;
