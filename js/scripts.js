@@ -20,6 +20,11 @@ $(document).ready(function(){
 	  return this;
 	};
     
+    //tooltip
+    $('.js-tooltip').tooltip({
+        position: { my: "right+20 bottom-12", at: "right top" },
+    })
+    
     
     //mobile popup
     $('.js-popup-mobile-open').on('click', function() {

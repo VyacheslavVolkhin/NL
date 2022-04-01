@@ -5401,6 +5401,29 @@ select::-ms-expand {
 body .compensate-for-scrollbar {
   overflow: visible !important;
 }
+body .ui-tooltip {
+  font-size: 10px;
+  line-height: 1.4;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  padding: 4px;
+  border-radius: 2px;
+  background: #323232;
+  min-width: 156px;
+}
+body .ui-tooltip:before {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-top-color: #323232;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  margin-right: -12px;
+  margin-top: -1px;
+}
 body .ui-datepicker {
   padding: 0;
   margin: 0;
